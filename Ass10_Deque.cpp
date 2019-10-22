@@ -100,14 +100,14 @@ public:
 			front=rear=-1;
 		}
 
-		else if (front == MAX)
+		/*else if (front == MAX)
 		{
 			front=0;
-		}
+		}*/
 
 		else
 		{
-			front++;
+			front=(front+1)%MAX;
 		}
 		cout<<ele<<" deleted!";
 	}
@@ -129,14 +129,14 @@ public:
 			front=rear=-1;
 		}
 
-		else if(rear == 0)
+		/*else if(rear == 0)
 		{
 			rear=MAX;
-		}
+		}*/
 
 		else
 		{
-			rear--;
+			rear=(rear-1)%MAX;
 		}
 		cout<<ele<<" deleted!";
 	}
