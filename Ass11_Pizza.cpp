@@ -14,6 +14,7 @@ public:
 	Pizza()
 	{
 		front=rear=-1;
+		id=0;
 	}
 
 	bool isFull()
